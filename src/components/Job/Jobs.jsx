@@ -12,7 +12,7 @@ const Jobs = () => {
 
   useEffect(()=>{
     try{
-      axios.get(`http://localhost:8000/api/v1/job/getall`,{withCredentials:true}).then((res)=>{
+      axios.get(`https://jobbackend-1-prpp.onrender.com/api/v1/job/getall`,{withCredentials:true}).then((res)=>{
         setJobs(res.data)
       })
     }
