@@ -23,7 +23,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:8000/api/v1/user/register",
+        "https://jobbackend-1-prpp.onrender.com/api/v1/user/register",
         { name, phone, email, role, password },
         {
           headers: {
